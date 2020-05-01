@@ -4,22 +4,19 @@
 
 <h2>JavaScript Class Method</h2>
 
-<p>Demonstration of how to add a method in a JavaScript Class.</p>
-
 <p id="Revenue"></p>
-
 <script>
 class IncomeStatement {
-  constructor(sales,salesReturn,) {
-    this.sales = sales;
-    this.salesReturn = salesReturn;
+  constructor(sales,salesReturn) {
+    this.sales = prompt(sales);
+    this.salesReturn = prompt(salesReturn);
   }
   totalRevenue() {
     return this.sales - this.salesReturn;
   }
 }
 
-TotalRevenue = new IncomeStatement(1000,500);
+TotalRevenue = new IncomeStatement(0,0);
 
 document.getElementById("Revenue").innerHTML = "Total Revenue is : " + TotalRevenue.totalRevenue();
 </script>
